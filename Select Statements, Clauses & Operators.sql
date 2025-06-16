@@ -49,7 +49,7 @@ SELECT * FROM FoodOrder WHERE Total_cost BETWEEN 250 AND 260;
 --DISTINCT
 SELECT DISTINCT Delivery_method FROM FoodOrder;
 
---WITH
+--WITH Keyword
 WITH HighCostOrders AS (
     SELECT * FROM FoodOrder
     WHERE Total_cost > 300
