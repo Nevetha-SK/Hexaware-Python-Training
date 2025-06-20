@@ -1,3 +1,64 @@
+#--Use else after a loop to run code only if no break occurred: for i in range(1, 4):
+
+for i in range(1, 4):
+    print(f"Checking i = {i}")
+    if i == 5:
+        print("Found 5!")
+        break
+else:
+    print("Loop finished without break.")
+
+
+#--Nested If : if x > 10: and if x > 20:
+x = 25
+
+if x > 10:
+    print("x is greater than 10")
+    if x > 20:
+        print("x is also greater than 20")
+
+
+#--Combine multiple conditions in one if: using age,has_license
+
+age = 22
+has_license = False
+
+if age >= 18 and has_license:
+    print("You are allowed to drive.")
+else:
+    print("You are not allowed to drive.")
+
+
+#--ages = [78, 34, 21, 47, 9] , condition = True , Use if else
+ages = [78, 34, 21, 47, 9]
+condition = True
+
+if condition:
+    for age in ages:
+        print(f"Age is {age}")
+else:
+    print("Condition is False, so no ages are shown.")
+
+
+#--Factorial (using recursive)
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+num = 5
+print(f"Factorial of {num} is {factorial(num)}")
+
+
+#--Fibonacci
+n = 10  # number of terms
+a, b = 0, 1  # first two terms
+print("Fibonacci series:")
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+
 #-----=Student Class with Instance Attributes------
 class Student:
     def __init__(self, student_id, student_name):
