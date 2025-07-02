@@ -39,7 +39,3 @@ It simulates the core functionalities of a gadget store — including managing p
 - Validates product availability in inventory before placing order
 - Prevents deleting products involved in existing orders
 
----
-
-## 📂 Project Structure
-
