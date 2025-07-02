@@ -1,0 +1,2 @@
+class DuplicateProductException(Exception):
+    pass
