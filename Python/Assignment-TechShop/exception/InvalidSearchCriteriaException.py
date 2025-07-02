@@ -1,0 +1,2 @@
+class InvalidSearchCriteriaException(Exception):
+    pass
